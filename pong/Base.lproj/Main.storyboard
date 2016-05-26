@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="550"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="smallPaddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="SLX-Kg-Z4k">
+                                <rect key="frame" x="149" y="522" width="103" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="g14-zh-SgO"/>
+                                    <constraint firstAttribute="width" constant="103" id="vGA-f4-sux"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="249" fixedFrame="YES" image="smallBall.png" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-Jm-1J8">
+                                <rect key="frame" x="165" y="91" width="15" height="15"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SLX-Kg-Z4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kF-eQ-Ne2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SLX-Kg-Z4k" secondAttribute="bottom" constant="8" id="XdE-QR-m9b"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="550"/>
+                    <connections>
+                        <outlet property="Ball" destination="F6D-Jm-1J8" id="oNm-FO-ECO"/>
+                        <outlet property="Paddle" destination="SLX-Kg-Z4k" id="jyj-4S-sw2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="346" y="483"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smallBall.png" width="180" height="160"/>
+        <image name="smallPaddle.png" width="100" height="30"/>
+    </resources>
 </document>

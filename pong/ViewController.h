@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    IBOutlet UIImageView *Paddle;
+    IBOutlet UIImageView *Ball;
+    long Ygain;
+    long Xgain;
+    NSTimer *timer;
+}
+
 
 
 @end

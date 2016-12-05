@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
-    IBOutlet UIImageView *Paddle;
-    IBOutlet UIImageView *Ball;
+    IBOutlet UIImageView *paddle;
+    IBOutlet UIImageView *ball;
     long Ygain;
     long Xgain;
     NSTimer *timer;
+    __weak IBOutlet UIScrollView *scrollView;
+    __weak IBOutlet UILabel *gameOverView;
+    CGPoint location;
 }
 
 

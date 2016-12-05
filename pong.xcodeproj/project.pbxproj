@@ -15,6 +15,8 @@
 		D54DAB581CEF8D0D00D18604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB561CEF8D0D00D18604 /* LaunchScreen.storyboard */; };
 		D54DAB631CEF8D0D00D18604 /* pongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB621CEF8D0D00D18604 /* pongTests.m */; };
 		D54DAB6E1CEF8D0D00D18604 /* pongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB6D1CEF8D0D00D18604 /* pongUITests.m */; };
+		D54DAB801CF05E1600D18604 /* smallBall.png in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB7F1CF05E1600D18604 /* smallBall.png */; };
+		D54DAB821CF05E9B00D18604 /* smallPaddle.png in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB811CF05E9B00D18604 /* smallPaddle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D54DAB691CEF8D0D00D18604 /* pongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54DAB6D1CEF8D0D00D18604 /* pongUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pongUITests.m; sourceTree = "<group>"; };
 		D54DAB6F1CEF8D0D00D18604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54DAB7F1CF05E1600D18604 /* smallBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallBall.png; sourceTree = "<group>"; };
+		D54DAB811CF05E9B00D18604 /* smallPaddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallPaddle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				D54DAB541CEF8D0D00D18604 /* Assets.xcassets */,
 				D54DAB561CEF8D0D00D18604 /* LaunchScreen.storyboard */,
 				D54DAB591CEF8D0D00D18604 /* Info.plist */,
+				D54DAB7F1CF05E1600D18604 /* smallBall.png */,
+				D54DAB811CF05E9B00D18604 /* smallPaddle.png */,
 				D54DAB481CEF8D0D00D18604 /* Supporting Files */,
 			);
 			path = pong;
@@ -245,7 +251,9 @@
 			files = (
 				D54DAB581CEF8D0D00D18604 /* LaunchScreen.storyboard in Resources */,
 				D54DAB551CEF8D0D00D18604 /* Assets.xcassets in Resources */,
+				D54DAB801CF05E1600D18604 /* smallBall.png in Resources */,
 				D54DAB531CEF8D0D00D18604 /* Main.storyboard in Resources */,
+				D54DAB821CF05E9B00D18604 /* smallPaddle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
